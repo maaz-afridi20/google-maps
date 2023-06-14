@@ -4,6 +4,8 @@ import 'package:google_mapss/getuser_location.dart';
 import 'package:google_mapss/polygons/polygons_lines.dart';
 import 'package:google_mapss/polygons/polygonss.dart';
 
+import 'customize_googlamap/customize_map.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -18,7 +20,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         useMaterial3: true,
       ),
-      home: PolygonsLines(),
+      home: CustomizeGoogleMap(),
     );
   }
 }
