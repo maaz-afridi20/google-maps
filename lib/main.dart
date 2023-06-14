@@ -1,10 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:google_mapss/get_usr_loc2.dart';
+import 'package:google_mapss/custom_window_info/cstm_window_info.dart';
 import 'package:google_mapss/getuser_location.dart';
-import 'package:google_mapss/google_search_places_api/search_places.dart';
-
-import 'anotherdependency.dart';
-import 'custom_markers.dart';
 
 void main() {
   runApp(const MyApp());
@@ -20,7 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         useMaterial3: true,
       ),
-      home: CustomMarkerss(),
+      home: CustomWindowInfo(),
     );
   }
 }

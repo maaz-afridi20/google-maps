@@ -19,6 +19,8 @@ class _GetUsrLocationState extends State<GetUsrLocation> {
     Marker(
       markerId: MarkerId("1"),
       position: LatLng(33.7295, 73.0372),
+      icon: BitmapDescriptor.defaultMarkerWithHue(
+          BitmapDescriptor.hueGreen), // this will change the color of the icon.
       infoWindow: InfoWindow(title: "title of marker"),
     ),
   ];
