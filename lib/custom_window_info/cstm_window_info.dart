@@ -47,12 +47,12 @@ class _CustomWindowInfoState extends State<CustomWindowInfo> {
               // aik tu ye hai k show kia krwana hai orr aik ye hai
               // k kiss lat lang prr show krna hai..
               Container(
-                height: 200,
+                height: 500,
                 width: 200,
                 decoration: BoxDecoration(
                   color: Colors.white,
                   border: Border.all(
-                    color: Colors.red,
+                    color: Colors.yellow,
                   ),
                   borderRadius: BorderRadius.circular(10),
                 ),
@@ -61,7 +61,7 @@ class _CustomWindowInfoState extends State<CustomWindowInfo> {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     Container(
-                      height: 80,
+                      height: 60,
                       width: 300,
                       decoration: const BoxDecoration(
                         image: DecorationImage(
@@ -74,6 +74,23 @@ class _CustomWindowInfoState extends State<CustomWindowInfo> {
                           Radius.circular(10),
                         ),
                         color: Colors.green,
+                      ),
+                    ),
+                    const Padding(
+                      padding: EdgeInsets.all(8),
+                      child: Row(
+                        children: [
+                          SizedBox(
+                            width: 100,
+                            child: Text(
+                              'Taj Mahal india khan',
+                              maxLines: 1,
+                              overflow: TextOverflow.fade,
+                              softWrap: false,
+                            ),
+                          ),
+                          Spacer(),
+                        ],
                       ),
                     ),
                   ],
